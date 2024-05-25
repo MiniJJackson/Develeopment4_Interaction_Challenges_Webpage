@@ -10,6 +10,11 @@
     src: url(../fonts/BOOKmanOpti-Light.otf);
 }
 
+@font-face {
+    font-family: Cantatana;
+    src: url(../fonts/CantanaOne-Regular.ttf);
+}
+
 body{
     background-color:black;
 }
@@ -44,7 +49,8 @@ img{
     max-width: 400px;
 }
 
-                        /* HEADER */
+
+/* HEADER */
 
 header{
     position: relative;
@@ -293,28 +299,23 @@ section{
     font-family: Book;
 }
 
-/* #offerWork :first-child::after{ /* after de H2 start
-    content: "S E R V I C E";
-    color: #dddddd4b;
-    font-weight: 200;
-    font-size: 32px;
-    position: relative;
-    left: -130px;
-    bottom: 30px;
-    // DIT MOET NA DE QUERY VAN 1045PX
-}
-*/
 
-#previousWork{
+#challenges{
     background-color: #ededed;
     padding-top: 60px;
 }   
 
-#previousWork h2,p, img{
+#challenges h2{
+    color: #05F228;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+}
+#challenges h2,p, img{
     padding-top: 10px;
 }
 
-#previousWork p {
+#challenges p {
     color: #000000;
     padding-bottom: 40px;
 }
@@ -349,297 +350,7 @@ section{
     }
 }
 
-
-            /* ABOUT ME PAGE */
-
-#aboutMe{
-    background-color: #fff;
-
-    padding-top: 20px;
-    padding-bottom: 120px;
-}
-
-#aboutMe img{
-    justify-content: center;
-}
-.aboutMeText{
-    margin-top: 30px;
-}
-
-/* HERE WE HAVE THE BEFORE TITLE */
-
-/* 
-#aboutMe :first-child::after{ /* after de H2 start
-    content: "A B O U T";
-    color: #05F228;
-    font-weight: 200;
-    font-size: 32px;
-    position: relative;
-    left: -230px;
-    bottom: 30px;
-    // DIT MOET NA DE QUERY VAN 1045PX
-}*/
-
-/* GENERAL H2 TITLE */
-
-img:hover {
-    box-shadow: 0 0 2.5px 1.5px rgba(0, 140, 186, 0.5);
-  }
-h2{ 
-    font-family: Book;
-    font-weight: 100;
-    font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: 1rem;
-    color: #05F228;
-}
-
-
-#aboutMe, #readyProject p{
-    font-family: Tahoma, sans-serif;
-    font-size: 0.9rem;
-    text-align: left;
-}
-
-.quoteAbout{
-    display: block;
-    padding: 10px;
-    font-style: italic;
-    text-align: center;
-
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-/* QUOTE ABOUT BEFORE / AFTER */
-
-.quoteAbout::before{
-    content: "\201C";
-    color: #05F228;
-    font-size: 3rem;
-    position: relative;
-    top: 0.5rem;
-}
-.quoteAbout::after{
-    content: "\201D";
-    color: #05F228;
-    font-size: 3rem;
-    font-style: normal;
-    position: relative;
-    bottom: -0.5rem;
-}
-
-#readyProject{
-    background-color: #ededed;
-    padding-top: 60px;
-}
-
-#readyProject h2{
-    font-family: Book;
-    font-weight: 100;
-    font-size: 1.5rem;
-    text-align: left;
-    margin-bottom: 1rem;
-    color: #05F228;
-}
-
-            /* PORTFOLIO */
-
-#workPortfolio{
-    background-color: #ededed;
-    padding-top: 60px;
-}
-
-#workPortfolio #widthContainer{
-   max-width: 1200px;
-}
-
-#workPortfolio h2,p, img{
-    padding-top: 10px;
-}
-
-#workPortfolio p {
-    color: #000000;
-    padding-bottom: 40px;
-}
-.quoteWorkPortfolio{
-    display: block;
-    padding: 10px;
-    font-style: italic;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-/* QUOTE PORTFOLIO BEFORE / AFTER */
-
-.quoteWorkPortfolio::before{
-    content: "\201C";
-    color: #05F228;
-    font-size: 3rem;
-    position: relative;
-    top: 0.5rem;
-}
-.quoteWorkPortfolio::after{
-    content: "\201D";
-    color: #05F228;
-    font-size: 3rem;
-    font-style: normal;
-    position: relative;
-    bottom: -0.5rem;
-}
-
-/* PORTFOLIO CONTENT PHOTO */
-
-.contentContainer{
-    border: 2px solid #05F228;
-    justify-content: center;
-    text-align: center;
-
-    margin: 20px;
-    padding: 20px;
-    height: 40vh;
-    width: 100%;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.contentContainer h4 {
-    font-family: Book;
-    font-weight: 800;
-    font-size: 1.3rem;
-    color: #05F228;
-    text-align:center;
-
-    background-color: rgba(245, 245, 220, 0.73);
-}
-
-.flexBox{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-/* ENCORA.HTML - CLOUDS - WATER */
-
-.fa-chevron-left{
-    color: #05F228;
-    font-size: 1.2rem;
-    margin-right: 10px;
-}
-
-.encoraPhoto li, a{
-    color: #05F228;
-    font-size: 1.2rem;
-    margin-right: 10px;
-    margin-bottom: 60px;
-}
-
-#compositionLines, #clouds , #water{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-
-  /* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-
-
-/* CONTACT ME */
-
-#getInTouch{
-    background-color: #fff;
-    padding-top: 20px;
-}
-
-#contactDetails{
-    justify-content: center;
-    text-align: center;
-}
-
-#contactDetails li{
-    padding: 20px;
-}
-#contactDetails li:last-child{
-    padding-bottom: 40px;
-}
-
-
-      /*--- FOOTER ---*/
+/*--- FOOTER ---*/
 
 footer{
     padding: 20px;
@@ -710,63 +421,7 @@ footer a{
         align-items: center;
     }
 
-    /* ABOUT.HTML */
 
-    #aboutMe #widthContainer{
-        display: flex;
-        flex-direction: row;
-    }
-
-    #aboutMe #widthContainer img{
-        margin-top: 50px;
-        margin-left: 20px;
-        height: 100%;
-        justify-content: center center;
-    }
-    
-    .aboutMeText{
-        width: 50%;
-        padding-left: 20px;
-    }
-
-    .quoteAbout, .quotePreviousWork{
-        max-width: 60%;
-        margin: 20px auto;
-    }
-
-    #readyProject #widthContainer{
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    /* PORTFOLIO */
-
-    .flexContainer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        gap: 2rem;
-        justify-content: space-around;
-    }
-
-    .contentContainer{
-        width: 30%;
-        height: 40vh;
-    }
-    .flexBox{
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-  
-    /* CONTACT */
-
-    #getInTouch{
-        justify-content: center;
-        text-align: center;
-    }
     /* FOOTER */
     .footer{
         max-width: 1200px;
