@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home - Yenna Van de Vyver's Portfolio - Development 4 - Challenges</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+
+</head>
+
+<body>
+
+    <header class="headerHome">
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="/img/LogoSide.png" alt="LogoSide" width="220"></a></div>
+            <ul class="linksNav">
+                <li><a class="underlineHover" href="index.html">Home</a></li>
+                <li><a class="underlineHover" href="about.html">About</a></li>
+                <li><a class="underlineHover" href="portfolio.html">Portfolio</a></li>
+                <li><a class="underlineHover" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="togglebtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <div class="overlay"></div>
+        <div id="widthContainer">
+        <div class="content">
+            <h1>Chasing the true meaning of art.</h1>
+            <br>
+            <p>Come with me through a journey of life.</p>
+            <br>
+            <br>
+            <br>
+            <a href="portfolio.html" class="btn">VIEW PORTFOLIO</a>
+        </div>
+     
+        </div>
+    </header>
+
+    <main>  
+        <section id="offerWork">
+            <div id="widthContainer">
+            
+            <div class="offerTittle">
+                <h2>What I Offer</h2>
+                <p>
+                    I am a creative artist with a dash of crazy. I enjoy capturing special, once-in-a-lifetime-moments and being playful in my designs. Always up for a new challenge that gets me out of my comfort zone.
+                </p>
+            </div>
+            <br>
+            <div class="offerContent">
+                <div class="offers">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Web Developer</h3>
+                    <p>
+                        With a big passion for coding, I enjoy spending hours figuring out how to make your designs and website ideas become reality.
+                    </p>
+                </div>
+                <div class="offers">
+                    <!--<i class="fa-solid fa-camera-retro fa-beat-fade"></i> -->
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h3> Event Photography</h3>
+                    <p>
+                        Music brings people together. Dancing makes the soul feel free. Capturing these moments is the meaning of true freedom.
+                    </p>
+                </div>
+                <div class="offers">
+                    <i class="fa-solid fa-ring"></i>
+                    <h3> Wedding Photography</h3>
+                    <p>
+                        Passion and love are the reasons I do this job, and therefore I love capturing two lovers on the happiest day in their lives.
+                    </p>
+                </div>        
+            </div>
+            <br>
+            <br>
+            <a href="contact.html" class="btn">MORE SERVICE</a>
+            <br>
+            </div>
+        </section>
+
+        <section id="previousWork">
+            <div id="widthContainer">
+            <h2>My Previous Work</h2>
+            <p>Just a glimp of work I've done the years.
+                <br>
+                <br>
+                I am currently working on a series in which I depict the beauty of the clouds.</p>
+
+            <div class="imageContainer">
+                <img id="imagesPortfolio" src="/img/portfolio/Photography/clouds/20220702_2202552.jpg" alt="clouds 1" width="100%">
+                <img id="imagesPortfolio" src="/img/portfolio/Photography/sea/20210730_140601.jpg" alt="sea 1" width="100%">
+                <img id="imagesPortfolio" src="/img/portfolio/Photography/clouds/20220910_1939352.jpg" alt="clouds 2" width="100%">
+                <img id="imagesPortfolio" src="/img/portfolio/Photography/sea/20220904_182008.jpg" alt="sea 2" width="100%">
+            </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+
+        <div class="footerLogo"><img src="/img/LogoCardMiddle.png" alt="Logo" width="100%"></div>
+
+        <div class="footerFlex">
+        <div id="quickLinks">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> &nbsp;Home</a></li>
+                <li><a href="portfolio.html"> <i class="fa-solid fa-chevron-right"></i> &nbsp;Portfolio</a></li>
+                <li><a href="about.html"> <i class="fa-solid fa-chevron-right"></i> &nbsp;About</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> &nbsp;Contact</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div id="contactInfo">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i> &nbsp; jenna.nina.vdv@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> &nbsp; (+32)468/26 50 82</li>
+            </ul>    
+        </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <script>
+        const togglebtn = document.querySelector('.togglebtn');
+        const togglebtnIcon = document.querySelector('.togglebtn i');
+        const dropdownMenu = document.querySelector('.dropdown_menu');
+
+        togglebtn.onclick = function(){
+            dropdownMenu.classList.toggle('open');
+            const isOpen = dropdownMenu.classList.contains('open');
+
+            togglebtnIcon.classList = isOpen 
+                ? 'fa-solid fa-xmark' 
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

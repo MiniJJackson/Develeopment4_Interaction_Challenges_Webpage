@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+@font-face {
+    font-family: Book;
+    src: url(../fonts/BOOKmanOpti-Light.otf);
+}
+
+body{
+    background-color:black;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    color: #05F228;
+}
+
+.btn{
+    background-color: #05F228;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.btn:hover{
+    background-color: #fff;
+}
+
+img{
+    max-width: 400px;
+}
+
+                        /* HEADER */
+
+header{
+    position: relative;
+    padding: 1rem;
+    height: 5em;
+}
+
+#widthContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding-bottom: 40px;
+}
+
+/* HEADER HOME INDEX.HTML - CHASING */
+
+.headerHome{
+    background-image: url(../img/portfolio/Photography/clouds/headerhome2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    height: 50vh;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.content{
+    padding: 40px 0;
+    position: absolute;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+header h1{
+    font-family: Book;
+    font-weight: 100;
+}
+
+p{
+    font-family: Tahoma, sans-serif;
+}
+
+/* HEADER SET .../.HTML GENERAL */
+
+.headerSet{
+    background-image: url(../img/portfolio/Photography/clouds/headerSet2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    height: 35vh;
+}
+
+.contentSet{
+    padding: 40px 0;
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    left: 35%;
+}
+.headerSet .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 35vh;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    z-index: 1;
+}
+
+.logo{
+    z-index: 1;
+}
+
+.navbar .linksNav {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.navbar .togglebtn{
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    z-index: 1;
+}
+
+/*  UNDERLINE HOVER LINKS NAV */
+.underlineHover{
+    display: inline-block;
+    position: relative;
+}
+.underlineHover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #05F228;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underlineHover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/* DROPDOWN MENU*/
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 0rem;
+    top: 80px; 
+    height: 0; /* THIS WILL CHANGE ON ToGGLE */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.0885, 0.32, 1.275);
+    z-index: 1;
+}
+
+.dropdown_menu a{
+    font-size: 1.8rem;
+}
+
+
+.dropdown_menu.open{
+    height: 100vh; /* THIS WILL CHANGE ON TOGGLE */
+
+
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li:first-child{
+    padding-top: 1.7rem;
+}
+
+/* ICONS MENU */
+
+.fa-bars, .fa-xmark{
+    cursor: pointer;
+    color: #fff;
+    background-color: #05F228;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.fa-xmark{
+    /*padding: 0.5rem 0.62rem;*/
+    font-size: 1.3rem;
+    padding-bottom: 0.4rem;
+}
+
+/* RESPOSIVE MENU */ 
+
+@media (max-width: 800px){
+    .navbar .linksNav{
+        display: none;
+    }
+
+    .navbar .togglebtn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+  
+}
+
+
+                /* SECTIONS*/
+
+section{
+    width: 100%;
+    /*max-width: 1600px;*/
+    margin: 0 auto;
+    padding: 0 2rem;
+    min-height: 50vh;
+}
+
+                /* HOME PAGE */
+
+.emptyContent{
+    height: 50vh;
+
+}
+
+#offerWork{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.offerContent h3,p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.offerContent h3, .fa-laptop-code, .fa-camera-retro, .fa-ring {
+    color: #05F228;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.offers{
+    padding-bottom: 20px;
+    font-family: Book;
+}
+
+/* #offerWork :first-child::after{ /* after de H2 start
+    content: "S E R V I C E";
+    color: #dddddd4b;
+    font-weight: 200;
+    font-size: 32px;
+    position: relative;
+    left: -130px;
+    bottom: 30px;
+    // DIT MOET NA DE QUERY VAN 1045PX
+}
+*/
+
+#previousWork{
+    background-color: #ededed;
+    padding-top: 60px;
+}   
+
+#previousWork h2,p, img{
+    padding-top: 10px;
+}
+
+#previousWork p {
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.imageContainer{
+    text-align: center;
+}
+
+.imageContainer h3{
+    margin: 20px 0;
+    text-align: left;
+}
+
+#imagesPortfolio{
+    border: 2px solid #05F228;
+    padding: 4px;
+    margin: 20px;
+}
+
+/* RESPONSIVE IMAGES PORTFOLIO */
+
+@media (max-width: 500px){
+    .imageContainer img{
+        max-width: 80%;
+        padding-bottom: 50px;
+    }
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+
+            /* ABOUT ME PAGE */
+
+#aboutMe{
+    background-color: #fff;
+
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+#aboutMe img{
+    justify-content: center;
+}
+.aboutMeText{
+    margin-top: 30px;
+}
+
+/* HERE WE HAVE THE BEFORE TITLE */
+
+/* 
+#aboutMe :first-child::after{ /* after de H2 start
+    content: "A B O U T";
+    color: #05F228;
+    font-weight: 200;
+    font-size: 32px;
+    position: relative;
+    left: -230px;
+    bottom: 30px;
+    // DIT MOET NA DE QUERY VAN 1045PX
+}*/
+
+/* GENERAL H2 TITLE */
+
+img:hover {
+    box-shadow: 0 0 2.5px 1.5px rgba(0, 140, 186, 0.5);
+  }
+h2{ 
+    font-family: Book;
+    font-weight: 100;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #05F228;
+}
+
+
+#aboutMe, #readyProject p{
+    font-family: Tahoma, sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.quoteAbout{
+    display: block;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* QUOTE ABOUT BEFORE / AFTER */
+
+.quoteAbout::before{
+    content: "\201C";
+    color: #05F228;
+    font-size: 3rem;
+    position: relative;
+    top: 0.5rem;
+}
+.quoteAbout::after{
+    content: "\201D";
+    color: #05F228;
+    font-size: 3rem;
+    font-style: normal;
+    position: relative;
+    bottom: -0.5rem;
+}
+
+#readyProject{
+    background-color: #ededed;
+    padding-top: 60px;
+}
+
+#readyProject h2{
+    font-family: Book;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #05F228;
+}
+
+            /* PORTFOLIO */
+
+#workPortfolio{
+    background-color: #ededed;
+    padding-top: 60px;
+}
+
+#workPortfolio #widthContainer{
+   max-width: 1200px;
+}
+
+#workPortfolio h2,p, img{
+    padding-top: 10px;
+}
+
+#workPortfolio p {
+    color: #000000;
+    padding-bottom: 40px;
+}
+.quoteWorkPortfolio{
+    display: block;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* QUOTE PORTFOLIO BEFORE / AFTER */
+
+.quoteWorkPortfolio::before{
+    content: "\201C";
+    color: #05F228;
+    font-size: 3rem;
+    position: relative;
+    top: 0.5rem;
+}
+.quoteWorkPortfolio::after{
+    content: "\201D";
+    color: #05F228;
+    font-size: 3rem;
+    font-style: normal;
+    position: relative;
+    bottom: -0.5rem;
+}
+
+/* PORTFOLIO CONTENT PHOTO */
+
+.contentContainer{
+    border: 2px solid #05F228;
+    justify-content: center;
+    text-align: center;
+
+    margin: 20px;
+    padding: 20px;
+    height: 40vh;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contentContainer h4 {
+    font-family: Book;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #05F228;
+    text-align:center;
+
+    background-color: rgba(245, 245, 220, 0.73);
+}
+
+.flexBox{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* ENCORA.HTML - CLOUDS - WATER */
+
+.fa-chevron-left{
+    color: #05F228;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.encoraPhoto li, a{
+    color: #05F228;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+
+#compositionLines, #clouds , #water{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/* CONTACT ME */
+
+#getInTouch{
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+#contactDetails{
+    justify-content: center;
+    text-align: center;
+}
+
+#contactDetails li{
+    padding: 20px;
+}
+#contactDetails li:last-child{
+    padding-bottom: 40px;
+}
+
+
+      /*--- FOOTER ---*/
+
+footer{
+    padding: 20px;
+    padding-bottom: 40px;
+    min-height: 30vh;
+    margin: 0 auto;
+}
+
+.footerLogo{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer h3{
+    font-family: Book;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #05F228;
+}
+footer a{
+    font-family: Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#quickLinks, #contactInfo{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#quickLinks ul{
+    margin-top: 2rem;
+    text-align: left;
+    margin-left: 40%;
+}
+
+#contactInfo ul{
+    color:#fff;
+    margin-top: 1.8rem;
+    text-align: left;
+    margin-left: 25%;
+}
+
+#contactInfo ul li{
+    padding: 10px;
+}
+
+.fa-chevron-right, .fa-envelope, .fa-phone{
+    color: #05F228;
+}
+
+/* GLOBAL RESPONSIVE MEDIA QUERIES */
+
+@media (min-width: 800px){
+    /* GLOBAL */
+    .contentSet{
+        padding-top: 80px;
+        left: 45%;
+    }
+
+    /* INDEX.HTML */
+    .offerContent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* ABOUT.HTML */
+
+    #aboutMe #widthContainer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #aboutMe #widthContainer img{
+        margin-top: 50px;
+        margin-left: 20px;
+        height: 100%;
+        justify-content: center center;
+    }
+    
+    .aboutMeText{
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .quoteAbout, .quotePreviousWork{
+        max-width: 60%;
+        margin: 20px auto;
+    }
+
+    #readyProject #widthContainer{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* PORTFOLIO */
+
+    .flexContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        justify-content: space-around;
+    }
+
+    .contentContainer{
+        width: 30%;
+        height: 40vh;
+    }
+    .flexBox{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+  
+    /* CONTACT */
+
+    #getInTouch{
+        justify-content: center;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }	
+
+    .footerFlex{
+        display: flex;
+    }
+
+    #contactInfo ul{
+        text-align: center;
+        margin: 0;
+    }
+
+   
+}
