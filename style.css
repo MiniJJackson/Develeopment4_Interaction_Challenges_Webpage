@@ -68,7 +68,7 @@ header{
 /* HEADER HOME INDEX.HTML - CHASING */
 
 .headerHome{
-    background-image: url(../img/portfolio/Photography/clouds/headerhome2.jpg);
+    background-image: url(../img/headerhome2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -260,7 +260,7 @@ p{
 }
 
 
-                /* SECTIONS*/
+/* SECTION */
 
 section{
     width: 100%;
@@ -270,35 +270,12 @@ section{
     min-height: 50vh;
 }
 
-                /* HOME PAGE */
+/* HOME PAGE */
 
 .emptyContent{
     height: 50vh;
 
 }
-
-#offerWork{
-    background-color: #fff;
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-.offerContent h3,p{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.offerContent h3, .fa-laptop-code, .fa-camera-retro, .fa-ring {
-    color: #05F228;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-.offers{
-    padding-bottom: 20px;
-    font-family: Book;
-}
-
 
 #challenges{
     background-color: #ededed;
@@ -320,11 +297,11 @@ section{
     padding-bottom: 40px;
 }
 
-.imageContainer{
+.challengeContainer{
     text-align: center;
 }
 
-.imageContainer h3{
+.challengeContainer h3{
     margin: 20px 0;
     text-align: left;
 }
@@ -333,21 +310,6 @@ section{
     border: 2px solid #05F228;
     padding: 4px;
     margin: 20px;
-}
-
-/* RESPONSIVE IMAGES PORTFOLIO */
-
-@media (max-width: 500px){
-    .imageContainer img{
-        max-width: 80%;
-        padding-bottom: 50px;
-    }
-    .flexContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
 }
 
 /*--- FOOTER ---*/
