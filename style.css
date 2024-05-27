@@ -1,9 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', sans-serif;
-}
 
 @font-face {
     font-family: Book;
@@ -13,6 +7,14 @@
 @font-face {
     font-family: Cantatana;
     src: url(../fonts/CantanaOne-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Book;
+
 }
 
 body{
@@ -98,7 +100,7 @@ header h1{
 }
 
 p{
-    font-family: Tahoma, sans-serif;
+    font-family: Book, sans-serif;
 }
 
 /* HEADER SET .../.HTML GENERAL */
